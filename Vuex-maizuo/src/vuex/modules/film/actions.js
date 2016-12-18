@@ -11,9 +11,9 @@ const _get = ({url, query}, commit) => {
 
   let _url
   if(query){
-    _url =  `http://m.maizuo.com/v4/api${url}?${query}`
+    _url =  `/api${url}?${query}`
   } else {
-    _url = `http://m.maizuo.com/v4/api${url}`
+    _url = `/api${url}`
   }
 
   return Vue.http.get(_url)
